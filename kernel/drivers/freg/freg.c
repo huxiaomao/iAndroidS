@@ -292,6 +292,7 @@ static void __exit freg_exit(void){
 		cdev_del(&(freg_dev->dev));
 		kfree(freg_dev);
 	}
+	
 	unregister_chrdev_region(devno,1);
 }
 
